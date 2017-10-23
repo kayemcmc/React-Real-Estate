@@ -1,0 +1,320 @@
+#content-area{
+    overflow: auto;
+    width: 100%;
+    background: black;
+    min-height: 100vh;
+}
+.col-md-3 {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+}
+.col-md-4 {
+    width: 33.33333333% !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+input[type="checkbox"] {
+    float: right;
+}
+
+
+#filter {
+    background: $grey;
+    width: 30%;
+    max-width: 300px;
+    display: inline-block;
+    float:left;
+
+    .inside {
+        padding: 20px;
+        max-width: 300px;
+    }
+
+    h4 {
+        margin-bottom: 25px;
+        font-weight:500;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+
+    select {
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #1b1b1b;
+    display:block;
+    margin-bottom: 25px;
+    width: 100%;
+ }
+ .filters{
+     .title{
+         font-size: 0.9rem;
+         display: block;
+         margin-bottom: 1rem;
+         color: $darkgrey;
+     }
+     input[type='text']{
+         width: 45%;
+         display: inline-block;
+         margin-right: 2.5%;
+         margin-bottom: 1rem;
+         border-radius: 5px;
+         padding: .4rem;
+     }
+     &.extras {
+         label{
+             display: block;
+             width: 100%;
+             padding: 10px 0;
+        
+         input[type='chechbox']{
+             float: right;
+         }
+        }
+     }
+ }
+}
+
+#listings {
+    width: 70%;
+    float: right;
+    display: inline-block;
+    padding: 15px;
+    background: $offwhite;
+ 
+
+    .search-area {
+        input[type="text"]{
+            width: 70%;
+            background: transparent;
+            font-size: 1.7rem;
+            border: none;
+            border-bottom: 2px solid $darkgrey;
+            margin-bottom: 20px;
+            font-weight: 100;
+            color: $pink;
+        }
+    }
+    .sortby-area {
+        margin-bottom: 20px;
+        .results {
+            font-size: 0.8rem;
+            color: $darkgrey;
+            display: inline-block;
+        }
+        .sort-options {
+            float: right;
+            select {
+                font-size: .9rem;
+                font-weight: 300;
+                border: 1px solid $lightgrey;
+                background: transparent;
+                padding: 20px;
+                display: inline-block;
+                margin-right: 15px;
+                vertical-align: top;
+            }
+            .view {
+                display: inline-block;
+
+                .fa {
+                    margin-right: 15px;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .listings-results {
+        margin-bottom: 80px;
+        .listing{
+            background: white;
+            border-radius:5px;
+            -webkit-box-shadow: 0 9px 54px -4px rgba(224,224,224, 1);
+            -moz-box-shadow: 0 9px 54px -4px rgba(224,224,224, 1);
+            box-shadow: 0 9px 54px -4px rgba(224,224,224, 1);
+
+        }
+       .listing-img {
+           color: white;
+           padding: 15px;
+           position: relative;
+       
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
+           min-height:200px;
+           -webkit-border-top-left-radius: 5px;
+           -webkit-border-top-right-radius: 5px;
+           -moz-border-radius-topleft: 5px;
+           -moz-border-radius-topright: 5px;
+           border-top-left-radius: 5px;
+           border-top-right-radius: 5px;
+           
+
+           &:hover{
+             .details {
+               opacity: 1;
+             }
+             .address {
+                 opacity: 0;
+             }
+           }
+           .address {
+               font-size: 1.1rem;
+               text-transform: capitalize;
+               position: absolute;
+               bottom: 20px;
+               opacity:1;
+               transition: all 0.4s ease-in-out;
+               text-shadow: 0px 1px 4px rgba(91, 91, 91, 1);
+           }
+       
+       .details {
+        transition: all .4s ease-in-out;
+           opacity: 0;
+           padding: 30px;
+           position: absolute;
+           top: 0;
+           left:0;
+           bottom:0;
+           right: 0;
+           -webkit-border-top-left-radius: 5px;
+           -webkit-border-top-right-radius: 5px;
+           -moz-border-radius-topleft: 5px;
+           -moz-border-radius-topright: 5px;
+           border-top-left-radius: 5px;
+           border-top-right-radius: 5px;
+           /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1d156b+0,be72d3+100 */
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1d156b+0,be72d3+100 */
+            background: rgba(25, 21, 65, 0.8); /* Old browsers */
+            background: -moz-linear-gradient(-45deg, rgba(25, 21, 65,.8) 0%, rgba(36, 25, 39, 0.8) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, rgba(25, 21, 65,.8) 0%, rgba(36, 25, 39, 0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg,rgba(25, 21, 65,.8) 0%, rgba(36, 25, 39, 0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d156b', endColorstr='#be72d3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            
+       
+       .user-img {
+           width: 30px;
+           height: 30px;
+           border-radius: 50%;
+           border: 2px solid white;
+           display: inline-block;
+           background: url('https://cdn.houseplans.com/product/o2d2ui14afb1sov3cnslpummre/w1024.jpg?v=15') no-repeat center center;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
+       }
+       .user-details {
+           vertical-align: top;
+           display: inline-block;
+           width: 70%;
+           margin-left: 20px;
+           .user-name {
+            font-weight:300;
+            font-size: 0.9rem;
+            display: block;
+            color: rgba(255, 255, 255, 1);
+            margin-top: 3px;
+            margin-bottom: .5px;
+           }
+           .post-date {
+            font-size: 0.9rem;
+               display: block;
+                color: rgba(255, 255, 255, .7);
+           }
+       }
+       .listing-details {
+           margin-top: 20px;
+           margin-bottom: 10px;
+          .fa {
+            display: inline-block;
+            font-size: 20px;
+            margin-left: 50px;
+          }
+          span {
+            display: inline-block;
+            font-weight: 300;
+            font-size: .8rem;
+            display: vertical-align;
+            vertical-align: top;
+            position: relative;
+            top: 3px;
+            margin-left: 20px;
+         }
+         .floor-space{
+             margin-bottom: 10px;
+         }
+
+
+        }
+     
+     }
+  }
+  .bottom-info {
+      padding: 20px 15px;
+      .price {
+          font-size: 1.1rem;
+          display: block;
+          margin-bottom: 10px;
+          color: $darkgrey;
+      }
+      .location{
+          font-size: 1.2rem;
+          display: block;
+          color: $lightgrey;
+      }
+  }
+ }
+}
+
+.view-btn {
+    background: $pink;
+    padding: 8px;
+    font-size: .9rem;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 150px;
+    margin-left: 45px;
+    margin-top: 10px;
+    transition: background .3s ease-in-out;
+    &:hover {
+        cursor: pointer;
+        background: $pink;
+    }
+  
+}
+
+#pagination {
+    width: 100%;
+    display: block;
+    text-align: center;
+    .pages{
+        margin: 0 auto;
+        background: white;
+        -webkit-box-shadow: 0 9px 54px -4px rgba(224,224,224, 1);
+        -moz-box-shadow: 0 9px 54px -4px rgba(224,224,224, 1);
+        box-shadow: 0 9px 54px -4px rgba(224,224,224, 1);
+        li {
+            display: inline-block;
+            padding: 20px 30px;
+            &.active,
+            &:hover {
+                background: $pink;
+                color: white;
+                opacity: .4;
+                font-weight: 700;
+            }
+        }
+    }
+
+}
