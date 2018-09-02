@@ -1,4 +1,4 @@
-# Real-Estate-Filter
+# React Real Estate Filter
 
 
 <h1 align="center">
